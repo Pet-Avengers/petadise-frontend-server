@@ -29,9 +29,6 @@
         </div>
       </div>
     </div>
-    <div class="footer">
-      <el-button type="primary" round @click="backButton">BACK</el-button>
-    </div>
   </div>
 </template>
 

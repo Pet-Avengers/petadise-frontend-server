@@ -51,9 +51,6 @@
         </el-card>
       </el-col>
     </el-row>
-    <div>
-      <el-button type="primary" @click="backButton">BACK</el-button>
-    </div>
   </div>
 </template>
 
