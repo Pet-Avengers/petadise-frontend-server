@@ -11,6 +11,8 @@ import Questionnaire from '@/components/Questionnaire'
 import PetInfo from '@/components/PetInfo'
 import StyleGuide from '@/components/StyleGuide'
 import GoogleMap from '@/components/GoogleMap'
+import PetArchive from '@/components/PetArchive'
+
 
 Vue.use(Router)
 
@@ -69,6 +71,11 @@ export default new Router({
       path: '/GoogleMap',
       name: 'GoogleMap',
       component: GoogleMap
+    },
+    {
+      path: '/PetArchive',
+      name: 'PetArchive',
+      component: PetArchive
     },
     // {
     //   path: '/',

@@ -23,8 +23,8 @@
           <p class="text">Shelter Location</p>
         </div>
         <div class="entry-block">
-          <i class="icon el-icon-document"></i>
-          <p class="text">Pet Info</p>
+          <i class="icon el-icon-document" @click="petArchiveButton"></i>
+          <p class="text">Pet Archive</p>
         </div>
       </div>
       <h1>
@@ -70,9 +70,11 @@ export default {
     },
     shelterLocationButton: function () {
       this.$router.replace({name: 'GoogleMap'})
-    }
-  },
-  mounted: function () {
+    },
+    petArchiveButton: function () {
+      this.$router.replace({name: 'PetArchive'})
+    },
+   mounted: function () {
     this.axios.post('/users/unique-id')
       .then(res => {
         this.uniqueId = res.data.uniqueId
