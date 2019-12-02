@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="header">NEARBY SHELTERS</div>
+    <div class="header">Nearby Shelters</div>
     <div class="searchBar">
       <h2>Search and add a pin</h2>
       <label>
@@ -8,7 +8,7 @@
           @place_changed="setPlace"
           style="width: 64%; border-color: #a43f49 ; border-style: groove; border-radius: 20px; height: 30px; ">
         </gmap-autocomplete>
-        <el-button @click="addMarker">Add Mark</el-button>
+        <el-button @click="addMarker" style="width:30%;">Add Mark</el-button>
       </label>
       <br/>
 
@@ -30,7 +30,7 @@
     <el-row :gutter="12">
       <el-col :span="12">
         <el-card shadow="always">
-          <img src="../assets/shelter1.png" class="image">
+          <img src="../assets/shelter2.png" class="image">
           <div style="padding: 10px;">
             <p style="font-size: smaller">Pet Smart</p>
             <p style="font-size: small">2440 Charleston Rd, Mountain View, CA 94043</p>
@@ -39,7 +39,7 @@
       </el-col>
       <el-col :span="12">
         <el-card shadow="always">
-          <img src="../assets/shelter2.png" class="image">
+          <img src="../assets/shelter1.png" class="image">
           <div style="padding: 10px;">
             <p style="font-size: smaller">Palo Alto Animal Service</p>
             <p style="font-size: small">250 Hamilton Ave, Palo Alto, CA 94301</p>

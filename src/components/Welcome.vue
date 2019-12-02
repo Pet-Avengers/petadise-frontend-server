@@ -40,6 +40,8 @@
       <p>
         Have no experience in raising a pet? No worries. We will get you well trained in an interesting digital game. Play fun, and learn fun.
       </p>
+      <a href="https://mailchi.mp/a38976523c45/petadise" style= "color:#a43f49">About Petadise</a>
+      <br/>
     </div>
     <div class="footer">
     </div>
