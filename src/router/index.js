@@ -10,7 +10,7 @@ import Login from '@/components/Login'
 import Questionnaire from '@/components/Questionnaire'
 import PetInfo from '@/components/PetInfo'
 import StyleGuide from '@/components/StyleGuide'
-
+import GoogleMap from '@/components/GoogleMap'
 
 Vue.use(Router)
 
@@ -64,6 +64,11 @@ export default new Router({
       path: '/StyleGuide',
       name: 'StyleGuide',
       component: StyleGuide
+    },
+    {
+      path: '/GoogleMap',
+      name: 'GoogleMap',
+      component: GoogleMap
     },
     // {
     //   path: '/',

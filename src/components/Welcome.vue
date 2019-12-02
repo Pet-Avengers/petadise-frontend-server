@@ -19,7 +19,7 @@
           <p class="text">Pet Game</p>
         </div>
         <div class="entry-block">
-          <i class="icon el-icon-location"></i>
+          <i class="icon el-icon-location" @click="shelterLocationButton"></i>
           <p class="text">Shelter Location</p>
         </div>
         <div class="entry-block">
@@ -67,6 +67,9 @@ export default {
       } else {
         this.$router.replace({name: 'GameMain', params: {petIndex: 0, uniqueId: this.uniqueId}})
       }
+    },
+    shelterLocationButton: function () {
+      this.$router.replace({name: 'GoogleMap'})
     }
   },
   mounted: function () {
