@@ -3,7 +3,7 @@
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a>
       <img src="../assets/img_avatar.png" class="profile-image" alt="Avatar">
-      <a href="#" @click="quitButton">Back to Home</a>
+      <a href="#" @click="quitButton">Back Home</a>
       <a style="color:#434343">Logout</a>
       <a href="#" @click="about">About</a>
     </div>
