@@ -63,7 +63,10 @@ export default {
     petGameButton: function () {
       console.log(this.isNewUser);
       if (this.isNewUser) {
-        this.$router.replace({name: 'Questionnaire', params: {username: this.username, uniqueId: this.uniqueId, isNewUser: this.isNewUser}})
+        this.$router.replace({
+          name: 'Questionnaire',
+          params: {username: this.username, uniqueId: this.uniqueId, isNewUser: this.isNewUser}
+        })
       } else {
         this.$router.replace({name: 'GameMain', params: {petIndex: 0, uniqueId: this.uniqueId}})
       }
@@ -74,13 +77,14 @@ export default {
     petArchiveButton: function () {
       this.$router.replace({name: 'PetArchive'})
     },
-   mounted: function () {
-    this.axios.post('/users/unique-id')
-      .then(res => {
-        this.uniqueId = res.data.uniqueId
-      }).catch(err => {
-        console.log(err)
-      })
+    mounted: function () {
+      this.axios.post('/users/unique-id')
+        .then(res => {
+          this.uniqueId = res.data.uniqueId
+        }).catch(err => {
+          console.log(err)
+        })
+    }
   }
 }
 </script>
