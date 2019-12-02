@@ -68,14 +68,13 @@ export default {
         this.$router.replace({name: 'GameMain', params: {petIndex: 0, uniqueId: this.uniqueId}})
       }
     },
+    shelterLocationButton: function () {
+      this.$router.replace({name: 'GoogleMap'})
+    },
     petArchiveButton: function () {
       this.$router.replace({name: 'PetArchive'})
     },
-    shelterLocationButton: function () {
-      this.$router.replace({name: 'ShelterLocation'})
-    }
-  },
-  mounted: function () {
+   mounted: function () {
     this.axios.post('/users/unique-id')
       .then(res => {
         this.uniqueId = res.data.uniqueId

@@ -8,12 +8,20 @@ import axios from './http'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import AnalogClock from 'vue-analog-clock'
+import * as VueGoogleMaps from 'vue2-google-maps';
 
 Vue.use(new VueSocketio({
   debug: true,
   connection: 'https://petadise-backend-server.herokuapp.com',
   vuex: {}
 }))
+
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: 'AIzaSyAQe5poi7QuJCNmCwq0EIsPlJ-vneVcUg4',
+    libraries: 'places' // necessary for places input
+  }
+})
 
 Vue.prototype.axios = axios
 
