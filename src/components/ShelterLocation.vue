@@ -1,8 +1,6 @@
 <template>
   <div class="container">
-    <div class="header">
-      Shelters Near By You
-    </div>
+    <div class="header">Shelters Near By You</div>
     <div class="main">
       <div class="location"></div>
     </div>
@@ -14,24 +12,23 @@
 
 <script>
 export default {
-  data () {
-    return {
-    }
+  data() {
+    return {};
   },
   methods: {
-    backButton: function () {
-      this.$router.replace({name: 'Welcome'})
+    backButton: function() {
+      this.$router.replace({ name: "Welcome" });
     }
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
-  .location {
-    /*border: 1px solid;*/
-    height: 300px;
-    width: 90%;
-    margin: 20px;
-    background: url('../assets/location.png') no-repeat center;
-  }
+.location {
+  /*border: 1px solid;*/
+  height: 300px;
+  width: 90%;
+  margin: 20px;
+  background: url("../assets/location.png") no-repeat center;
+}
 </style>

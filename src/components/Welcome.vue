@@ -1,6 +1,16 @@
 <template>
   <div class="container">
-    <div class="header">Petadise</div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a>
+      <img src="../assets/img_avatar.png" class="profile-image" alt="Avatar">
+      <a href="#" @click="closeNav">Back Home</a>
+      <a style="color:#434343">Logout</a>
+      <a href="#" @click="about">About</a>
+    </div>
+    <div class="header">
+      <div class="nav-open" @click="openNav">&#9776;</div>
+      Petadise
+    </div>
     <div class="main">
       <el-carousel indicator-position="outside" height="220px">
         <el-carousel-item>
@@ -86,6 +96,18 @@ export default {
         }).catch(err => {
           console.log(err)
         })
+    },
+    quitButton: function () {
+      this.$router.replace({name: 'Welcome', params: {username: this.username, uniqueId: this.uniqueId, isNewUser: this.isNewUser}});
+    },
+    openNav: function() {
+      document.getElementById("mySidenav").style.width = "200px";
+    },
+    closeNav: function() {
+      document.getElementById("mySidenav").style.width = "0";
+    },
+    about: function() {
+      window.location.href = "https://mailchi.mp/a38976523c45/petadise"
     }
   }
 }
