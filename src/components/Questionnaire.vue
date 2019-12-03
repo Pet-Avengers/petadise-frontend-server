@@ -5,7 +5,6 @@
       <img src="../assets/img_avatar.png" class="profile-image" alt="Avatar">
       <a href="#" @click="quitButton">Back Home</a>
       <a style="color:#434343">Logout</a>
-      <a href="#" @click="about">About</a>
     </div>
     <div class="header">
       <div class="nav-open" @click="openNav">&#9776;</div>

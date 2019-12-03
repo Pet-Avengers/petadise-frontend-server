@@ -5,7 +5,6 @@
       <img src="../assets/img_avatar.png" class="profile-image" alt="Avatar">
       <a href="#" @click="closeNav">Back Home</a>
       <a style="color:#434343">Logout</a>
-      <a href="#" @click="about">About</a>
     </div>
     <div class="header">
       <div class="nav-open" @click="openNav">&#9776;</div>
@@ -50,7 +49,6 @@
       <p>
         Have no experience in raising a pet? No worries. We will get you well trained in an interesting digital game. Play fun, and learn fun.
       </p>
-      <a href="https://mailchi.mp/a38976523c45/petadise" style= "color:#a43f49">About Petadise</a>
       <br/>
     </div>
     <div class="footer">
