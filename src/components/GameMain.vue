@@ -7,7 +7,6 @@
       <img src="../assets/img_avatar.png" class="profile-image" alt="Avatar">
       <a href="#" @click="quitButton">Back Home</a>
       <a style="color:#434343">Logout</a>
-      <a href="#" @click="about">About</a>
     </div>
       <div class="nav-open-game" @click="openNav">&#9776;</div>
       <el-tabs v-model="activeName" type="card" style="margin-left:60px" @tab-click="handleClick">

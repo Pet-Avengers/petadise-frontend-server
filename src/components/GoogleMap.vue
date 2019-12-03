@@ -5,12 +5,14 @@
       <img src="../assets/img_avatar.png" class="profile-image" alt="Avatar" />
       <a href="#" @click="quitButton">Back Home</a>
       <a style="color:#434343">Logout</a>
-      <a href="#" @click="about">About</a>
     </div>
     <div class="header">
-      <div class="nav-open" @click="openNav">&#9776;</div>Nearby Shelters
+      <div class="nav-open" @click="openNav">
+        &#9776;
+      </div>
+      Nearby Shelters
     </div>
-    <div class="searchBar">
+    <!-- <div class="searchBar">
       <h2>Search and add a pin</h2>
       <label>
         <gmap-autocomplete
@@ -20,21 +22,26 @@
         <el-button @click="addMarker" style="width:30%;">Add Mark</el-button>
       </label>
       <br />
+    </div> -->
+    <br>
+    <br>
+    <br>
+    <div>
+      <gmap-map :center="center" :zoom="11" style="width:100%;  height: 400px;">
+        <gmap-marker
+          :key="index"
+          v-for="(m, index) in markers"
+          :position="m.position"
+          @click="center=m.position"
+        ></gmap-marker>
+      </gmap-map>
     </div>
-    <br />
-    <gmap-map :center="center" :zoom="11" style="width:100%;  height: 400px;">
-      <gmap-marker
-        :key="index"
-        v-for="(m, index) in markers"
-        :position="m.position"
-        @click="center=m.position"
-      ></gmap-marker>
-    </gmap-map>
-    <br />
     <el-row :gutter="12">
       <el-col :span="12">
         <el-card shadow="always">
+          <a href="https://www.petsmart.com/?utm_source=google&utm_medium=search&gclid=Cj0KCQiAiZPvBRDZARIsAORkq7fKHb2Vz8TrSTIeQRFGTMP4_vvz42V2oG2b2Oyj6sdCy2fBl7XruJIaAjz3EALw_wcB">
           <img src="../assets/shelter2.png" class="image" />
+          </a>
           <div style="padding: 10px;">
             <p style="font-size: smaller">Pet Smart</p>
             <p style="font-size: small">2440 Charleston Rd, Mountain View, CA 94043</p>
@@ -43,7 +50,9 @@
       </el-col>
       <el-col :span="12">
         <el-card shadow="always">
-          <img src="../assets/shelter1.png" class="image" />
+          <a href="https://www.petsmart.com/?utm_source=google&utm_medium=search&gclid=Cj0KCQiAiZPvBRDZARIsAORkq7fKHb2Vz8TrSTIeQRFGTMP4_vvz42V2oG2b2Oyj6sdCy2fBl7XruJIaAjz3EALw_wcB">
+          <img src="../assets/shelter1.png" class="image"/>
+          </a>
           <div style="padding: 10px;">
             <p style="font-size: smaller">Palo Alto Animal Service</p>
             <p style="font-size: small">250 Hamilton Ave, Palo Alto, CA 94301</p>
