@@ -1,0 +1,123 @@
+.header {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    font-family: Bradley Hand, cursive;
+    background-color: #e6b8af;
+    text-align: center;
+    line-height: 60px;
+    /*These for lines are to fix header in the top*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+div {
+    display: block;
+}
+
+.main {
+    background-color: white;
+    color: #333;
+    text-align: center;
+    /*These for lines are to fix main in the middle*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px;
+    bottom: 60px;
+    /*border: 1px solid;*/
+}
+
+.container {
+    position: releative;
+    font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
+    /* font-family: Jazz LET, fantasy; */
+}
+
+element.style {
+    transform: translateX(0px) scale(1);
+}
+
+.el-carousel__item {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 0;
+}
+
+element.style {
+    transform: translateX(0px) scale(1);
+}
+
+.button {
+    display: inline-block !important;
+    padding: 12px 20px!important;
+    background-color: #E6B8AF!important;
+    color: #a43f49!important;
+    font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif !important;
+    font-size: 13px!important;
+    font-weight: 800!important;
+    letter-spacing: 0.5px!important;
+    text-transform: uppercase!important;
+    -webkit-transition: all 0.5s!important;
+    transition: all 0.5s!important;
+    border-color: #fff!important;
+    border-radius: 20px !important;
+}
+
+.button {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #FFF;
+    border: 1px solid #DCDFE6;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+}
+
+.responsive{
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+  /* background-color: #B3C0D1; */
+  color: #333;
+  text-align: center;
+  height:60px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    margin: 2%;
+    padding: 3%;
+    color: #3B5257;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
