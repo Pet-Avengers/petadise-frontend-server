@@ -13,3 +13,5 @@ https://github.com/Pet-Avengers/petadise-frontend-server
 https://github.com/Pet-Avengers/petadise-backend-server
 ## Petadise
 https://petadise-frontend-server.herokuapp.com/#/
+## Style Guide
+https://github.com/Pet-Avengers/petadise-frontend-server/blob/master/styleGuide/styleGuide.css
